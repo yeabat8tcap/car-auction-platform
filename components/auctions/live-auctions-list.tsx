@@ -135,7 +135,7 @@ export function LiveAuctionsList() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Current Bid</p>
-                  <p className="text-xl font-bold text-primary">{auction.currentBid.toLocaleString()} ETH</p>
+                  <p className="text-xl font-bold text-primary">{auction.currentBid.toLocaleString()} SOL</p>
                 </div>
                 <div className="text-right">
                   <p className="text-sm text-muted-foreground">Bids</p>

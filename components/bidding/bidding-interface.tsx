@@ -78,7 +78,7 @@ export function BiddingInterface({
     }
 
     if (bidAmount < minimumBid) {
-      setError(`Minimum bid is ${minimumBid.toLocaleString()} ETH`)
+      setError(`Minimum bid is ${minimumBid.toLocaleString()} SOL`)
       return
     }
 
@@ -106,7 +106,7 @@ export function BiddingInterface({
       }
 
       setBidHistory((prev) => [newBid, ...prev.map((bid) => ({ ...bid, isWinning: false }))])
-      setSuccess(`Bid placed successfully for ${bidAmount.toLocaleString()} ETH!`)
+      setSuccess(`Bid placed successfully for ${bidAmount.toLocaleString()} SOL!`)
       setBidAmount(bidAmount + 5000) // Set next minimum bid
 
       // Clear success message after 3 seconds
@@ -124,7 +124,7 @@ export function BiddingInterface({
   }
 
   const formatCurrency = (amount: number) => {
-    return `${amount.toLocaleString()} ETH`
+    return `${amount.toLocaleString()} SOL`
   }
 
   return (
@@ -194,7 +194,7 @@ export function BiddingInterface({
             <>
               {/* Bid Amount Input */}
               <div className="space-y-2">
-                <label className="text-sm font-medium">Bid Amount (ETH)</label>
+                <label className="text-sm font-medium">Bid Amount (SOL)</label>
                 <div className="flex items-center gap-2">
                   <Button
                     variant="outline"
@@ -236,7 +236,7 @@ export function BiddingInterface({
               </div>
 
               {/* Wallet Balance */}
-              <div className="text-sm text-muted-foreground">Available Balance: {balance} ETH</div>
+              <div className="text-sm text-muted-foreground">Available Balance: {balance} SOL</div>
 
               {/* Place Bid Button */}
               <Button

@@ -110,10 +110,10 @@ export function MarketplaceFilters() {
         </Card>
       )}
 
-      {/* Price Range */}
+      {/* Price Range
       <Card className="bg-card/80 backdrop-blur-sm border-border/50">
         <CardHeader>
-          <CardTitle className="text-sm">Price Range (ETH)</CardTitle>
+          <CardTitle className="text-sm">Price Range (SOL)</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="px-2">
@@ -137,7 +137,7 @@ export function MarketplaceFilters() {
             />
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
 
       {/* Make */}
       <Card className="bg-card/80 backdrop-blur-sm border-border/50">

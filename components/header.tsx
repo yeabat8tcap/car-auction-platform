@@ -42,7 +42,7 @@ export function Header() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Car className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-2xl font-bold gradient-text">LuxeAuction</span>
+              <span className="text-2xl font-bold gradient-text">BasedCars</span>
             </div>
 
             {/* Desktop Navigation */}
@@ -74,7 +74,7 @@ export function Header() {
                         </Avatar>
                         <div className="text-left">
                           <div className="text-sm font-medium">{user.username}</div>
-                          <div className="text-xs text-muted-foreground">{balance} ETH</div>
+                          <div className="text-xs text-muted-foreground">{balance} SOL</div>
                         </div>
                         <ChevronDown className="w-4 h-4" />
                       </div>
@@ -133,7 +133,7 @@ export function Header() {
                         <AvatarImage src={user.avatar || "/placeholder.svg"} />
                         <AvatarFallback className="text-xs">{user.username.slice(0, 2).toUpperCase()}</AvatarFallback>
                       </Avatar>
-                      <div className="text-sm text-muted-foreground">Balance: {balance} ETH</div>
+                      <div className="text-sm text-muted-foreground">Balance: {balance} SOL</div>
                       <div className="flex gap-2">
                         <Button
                           variant="outline"

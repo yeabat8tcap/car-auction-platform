@@ -9,7 +9,7 @@ import { AuthProvider } from "@/components/auth/auth-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "LuxeAuction - Premium Car Marketplace",
+  title: "BasedCars - Premium Car Marketplace",
   description: "High-end car auction platform with crypto integration and 3D visualization",
   generator: "v0.app",
 }

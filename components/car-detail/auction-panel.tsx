@@ -9,7 +9,7 @@ import { Gavel, TrendingUp, AlertTriangle } from "lucide-react"
 
 export function AuctionPanel() {
   const [timeLeft, setTimeLeft] = useState(93720) // seconds
-  const [currentBid, setCurrentBid] = useState(850000) // in ETH (wei equivalent)
+  const [currentBid, setCurrentBid] = useState(850000) // in SOL (wei equivalent)
   const [totalBids, setTotalBids] = useState(47)
 
   // Countdown timer
@@ -70,7 +70,7 @@ export function AuctionPanel() {
           {/* Current Bid Display */}
           <div className="text-center">
             <p className="text-sm text-muted-foreground mb-2">Current Bid</p>
-            <div className="text-3xl font-bold text-primary mb-1">{currentBid.toLocaleString()} ETH</div>
+            <div className="text-3xl font-bold text-primary mb-1">{currentBid.toLocaleString()} SOL</div>
             <p className="text-sm text-muted-foreground">≈ ${(currentBid * 2.34).toLocaleString()} USD</p>
             <div className="flex items-center justify-center gap-1 text-green-400 text-sm mt-2">
               <TrendingUp className="w-3 h-3" />
@@ -85,7 +85,7 @@ export function AuctionPanel() {
               <span>{progress.toFixed(0)}%</span>
             </div>
             <Progress value={progress} className="h-3" />
-            <p className="text-xs text-muted-foreground mt-1">Reserve price: {reservePrice.toLocaleString()} ETH</p>
+            <p className="text-xs text-muted-foreground mt-1">Reserve price: {reservePrice.toLocaleString()} SOL</p>
           </div>
 
           {/* Time Warning */}

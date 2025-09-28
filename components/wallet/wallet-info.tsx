@@ -72,7 +72,7 @@ export function WalletInfo() {
         <div className="space-y-2">
           <span className="text-sm text-muted-foreground">Balance</span>
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold">{balance} ETH</span>
+            <span className="text-2xl font-bold">{balance} SOL</span>
             <TrendingUp className="w-4 h-4 text-green-400" />
           </div>
           <p className="text-xs text-muted-foreground">

@@ -95,7 +95,7 @@ export function SellerInfo() {
             Trust & Safety
           </h4>
           <ul className="text-sm text-muted-foreground space-y-1">
-            <li>• Identity verified by LuxeAuction</li>
+            <li>• Identity verified by BasedCars</li>
             <li>• All transactions secured by smart contracts</li>
             <li>• 7-day inspection period included</li>
             <li>• Escrow service available</li>

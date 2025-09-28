@@ -36,10 +36,10 @@ export function MarketplaceHeader() {
               {/* Sort Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm">
+                  {/* <Button variant="outline" size="sm">
                     <SortAsc className="w-4 h-4 mr-2" />
                     Sort
-                  </Button>
+                  </Button> */}
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   <DropdownMenuItem onClick={() => setSortBy("ending_soon")}>Ending Soon</DropdownMenuItem>
@@ -51,7 +51,7 @@ export function MarketplaceHeader() {
               </DropdownMenu>
 
               {/* View Mode Toggle */}
-              <div className="flex border border-border rounded-lg">
+              {/* <div className="flex border border-border rounded-lg">
                 <Button
                   variant={viewMode === "grid" ? "default" : "ghost"}
                   size="sm"
@@ -68,13 +68,13 @@ export function MarketplaceHeader() {
                 >
                   <List className="w-4 h-4" />
                 </Button>
-              </div>
+              </div> */}
 
-              {/* Filter Toggle */}
+              {/* Filter Toggle
               <Button variant="outline" size="sm">
                 <Filter className="w-4 h-4 mr-2" />
                 Filters
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

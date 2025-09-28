@@ -11,10 +11,10 @@ export function Footer() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Car className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-2xl font-bold gradient-text">LuxeAuction</span>
+              <span className="text-2xl font-bold gradient-text">BasedCars</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md text-pretty">
-              The world's premier platform for luxury car auctions, powered by blockchain technology and enhanced with
+              The world's premier platform for luxury car auctions, powered by Solana and enhanced with
               immersive 3D visualization.
             </p>
             <div className="flex space-x-4">
@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 LuxeAuction. All rights reserved. Built with cutting-edge blockchain technology.</p>
+          <p>&copy; 2025 BasedCars. All rights reserved. Built with cutting-edge blockchain technology.</p>
         </div>
       </div>
     </footer>

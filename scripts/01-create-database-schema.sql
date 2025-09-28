@@ -1,4 +1,4 @@
--- LuxeAuction Database Schema
+-- BasedCars Database Schema
 -- High-end car auction platform with crypto integration
 
 -- Users table for authentication and profiles
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS auctions (
     reserve_price DECIMAL(15,2),
     current_bid DECIMAL(15,2) DEFAULT 0,
     bid_increment DECIMAL(15,2) DEFAULT 0.1,
-    currency VARCHAR(10) DEFAULT 'ETH',
+    currency VARCHAR(10) DEFAULT 'SOL',
     start_time TIMESTAMP WITH TIME ZONE NOT NULL,
     end_time TIMESTAMP WITH TIME ZONE NOT NULL,
     status VARCHAR(20) DEFAULT 'scheduled' CHECK (status IN ('scheduled', 'live', 'ended', 'cancelled')),
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS bids (
     auction_id UUID REFERENCES auctions(id) ON DELETE CASCADE,
     bidder_id UUID REFERENCES users(id) ON DELETE CASCADE,
     amount DECIMAL(15,2) NOT NULL,
-    currency VARCHAR(10) DEFAULT 'ETH',
+    currency VARCHAR(10) DEFAULT 'SOL',
     transaction_hash VARCHAR(66),
     status VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending', 'confirmed', 'failed')),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     buyer_id UUID REFERENCES users(id) ON DELETE CASCADE,
     seller_id UUID REFERENCES users(id) ON DELETE CASCADE,
     amount DECIMAL(15,2) NOT NULL,
-    currency VARCHAR(10) DEFAULT 'ETH',
+    currency VARCHAR(10) DEFAULT 'SOL',
     transaction_hash VARCHAR(66) UNIQUE,
     block_number BIGINT,
     gas_used BIGINT,

@@ -130,7 +130,7 @@ export function BiddingHistory() {
               </div>
 
               <div className="text-right">
-                <div className="text-lg font-bold text-primary">{bid.amount.toFixed(1)} ETH</div>
+                <div className="text-lg font-bold text-primary">{bid.amount.toFixed(1)} SOL</div>
                 <div className="text-sm text-muted-foreground">${(bid.amount * 2000).toLocaleString()}</div>
               </div>
             </div>
@@ -153,11 +153,11 @@ export function BiddingHistory() {
         <div className="mt-6 pt-6 border-t border-border">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-lg font-bold text-primary">2.4 ETH</div>
+              <div className="text-lg font-bold text-primary">2.4 SOL</div>
               <div className="text-xs text-muted-foreground">Highest Bid</div>
             </div>
             <div>
-              <div className="text-lg font-bold">0.3 ETH</div>
+              <div className="text-lg font-bold">0.3 SOL</div>
               <div className="text-xs text-muted-foreground">Avg. Increment</div>
             </div>
             <div>

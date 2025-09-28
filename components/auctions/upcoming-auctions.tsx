@@ -150,7 +150,7 @@ export function UpcomingAuctions() {
               <div className="space-y-2">
                 <div>
                   <p className="text-sm text-muted-foreground">Estimated Value</p>
-                  <p className="text-lg font-bold text-primary">{auction.estimatedValue} ETH</p>
+                  <p className="text-lg font-bold text-primary">{auction.estimatedValue} SOL</p>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <Clock className="w-3 h-3 text-muted-foreground" />

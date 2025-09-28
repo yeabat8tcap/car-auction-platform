@@ -125,7 +125,7 @@ export function AuctionFilters() {
       {/* Current Bid Range */}
       <Card className="bg-card/80 backdrop-blur-sm border-border/50">
         <CardHeader>
-          <CardTitle className="text-sm">Current Bid Range (ETH)</CardTitle>
+          <CardTitle className="text-sm">Current Bid Range (SOL)</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="px-2">

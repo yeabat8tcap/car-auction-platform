@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Play, Zap } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export function HeroSection() {
           {/* Badge */}
           <Badge variant="secondary" className="mb-6 bg-primary/20 text-primary border-primary/30">
             <Zap className="w-3 h-3 mr-1" />
-            Powered by Blockchain Technology
+            Powered by Solana
           </Badge>
 
           {/* Main Heading */}
@@ -31,10 +32,12 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="auction-glow text-lg px-8 py-6">
-              Explore Auctions
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+            <Link href="/auctions">
+              <Button size="lg" className="auction-glow text-lg px-8 py-6">
+                Explore Auctions
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
               <Play className="w-5 h-5 mr-2" />
               Watch Demo
