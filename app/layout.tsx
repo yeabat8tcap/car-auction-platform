@@ -24,7 +24,10 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <WalletProvider>
           <AuthProvider>
-            <Suspense fallback={null}>{children}</Suspense>
+            <Suspense fallback={null}>
+              {children}
+              <Analytics />
+            </Suspense>
           </AuthProvider>
         </WalletProvider>
         <Analytics />
